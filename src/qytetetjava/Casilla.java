@@ -142,6 +142,9 @@ public class Casilla {
         this.numHoteles = numHoteles;
     }
     
+    void setNumCasas(int numCasas){   
+        this.numCasas = numCasas;
+    }
 
     @Override
     public String toString() {

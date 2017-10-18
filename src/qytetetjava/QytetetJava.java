@@ -16,7 +16,7 @@ public class QytetetJava {
     private static Tablero tablero;
     private static Dado dado = new Dado();
     
-    //Prueba
+    
     /*----------------------------------------------------------------------------*/
     
     public static boolean aplicarSopresa(){    
