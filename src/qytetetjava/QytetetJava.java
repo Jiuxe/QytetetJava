@@ -1,6 +1,7 @@
 package qytetetjava;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class QytetetJava {
     
@@ -93,7 +94,7 @@ public class QytetetJava {
     
         if(casilla.sePuedeEdificarCasa()){
        
-            //casilla.setNumCasas(casilla.getNumCasas() + 1);
+            casilla.setNumCasas(casilla.getNumCasas() + 1);
             return true;
         }
         return false;
@@ -162,18 +163,17 @@ public class QytetetJava {
         return false;
     }
             
-    /*public static List[] obtenerRanking(){
+    public static ArrayList<Jugador> obtenerRanking(){
         
-        
-        
-    
+        throw new UnsupportedOperationException("Sin implementar");
+
     }
     
     public static Casilla[] propiedadesHipotecadasJugador(boolean hipotecadas){   //--------------IDK--------------------
         
+        throw new UnsupportedOperationException("Sin implementar");        
         
-        
-    }*/
+    }
     
     public static Jugador siguienteJugador(){
     
@@ -237,15 +237,15 @@ public class QytetetJava {
         mazo.add(new Sorpresa ("Llevas 8 años en la carrera y aun tienes asignaturas de primero. Pagas 200 a cada Jugador", -200, TipoSorpresa.PORJUGADOR));
         mazo.add(new Sorpresa ("Acoges a estudiantes de Erasmus en tu casa. Cobra 100 por cada hotel", 100, TipoSorpresa.PORCASAHOTEL));
         mazo.add(new Sorpresa ("Encontra de tu voluntad te eligen delegado de la Clase. Cobra 100 a cada Jugador", 100, TipoSorpresa.PORJUGADOR));
-    
+        
+        Collections.shuffle(mazo);
     }
     
     
     public static void main(String[] args) {
-            
-        jugar();
+                 
         
-        
+        System.out.print("FIN");
         
     }
 }
