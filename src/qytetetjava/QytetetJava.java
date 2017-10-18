@@ -92,8 +92,8 @@ public class QytetetJava {
     public static boolean edificarCasa(Casilla casilla){
     
         if(casilla.sePuedeEdificarCasa()){
-        
-            casilla.setNumCasas(casilla.getNumCasas() + 1);
+       
+            //casilla.setNumCasas(casilla.getNumCasas() + 1);
             return true;
         }
         return false;

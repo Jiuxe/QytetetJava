@@ -19,11 +19,12 @@ public class Tablero {
     }
     
     Casilla obtenerCasillaNumero(int numeroCasilla){
-        
+        throw new UnsupportedOperationException("Sin implementar");
+
     }
     
     Casilla obtenerNuevaCasilla(Casilla casilla, int desplazamiento){
-        
+        throw new UnsupportedOperationException("Sin implementar");        
     }
     
     /*-----------------------------------------------------------------------------*/
