@@ -9,7 +9,7 @@ public class Jugador {
     String nombre;
     int saldo;
     private Casilla casillaActual;
-    private ArrayList<TituloPropiedad> propiedades = new ArrayList();
+    private ArrayList<TituloPropiedad> propiedades;
     private Sorpresa cartaLibertad; 
     
     
@@ -18,6 +18,7 @@ public class Jugador {
         this.nombre = nombre;
         this.encarcelado = false;
         this.saldo = 7500;
+        this.propiedades = new ArrayList();         //Deberías inicializarlo en el constructor
     }
     
     /*---------------------------------------------------------------------------*/
