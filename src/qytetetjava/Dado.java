@@ -4,7 +4,7 @@ package qytetetjava;
 public class Dado {
     
     int tirar(){
-    
-        return 0;
+         
+        return Math.random()*6+1;
     }    
 }
