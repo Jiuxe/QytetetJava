@@ -9,8 +9,10 @@ public class Casilla {
     private int numCasas;
     private TipoCasilla casilla;
     private TituloPropiedad titulo;
+    private int hipotecaBase;
+    private boolean hipotecada;
 
-    public Casilla(int numeroCasilla, int coste, TipoCasilla casilla, TituloPropiedad titulo){
+    public Casilla(int numeroCasilla, int coste, TipoCasilla casilla, TituloPropiedad titulo, int hipotecaBase){
         
         this.numeroCasilla = numeroCasilla;
         this.coste = coste;
@@ -18,6 +20,8 @@ public class Casilla {
         this.numHoteles = 0;
         this.titulo = titulo;
         this.casilla =  casilla;
+        this.hipotecaBase = hipotecaBase;
+        hipotecada = false;
         
     }
     
@@ -35,7 +39,8 @@ public class Casilla {
     }
     
     int CalcularValorHipoteca(){
-        throw new UnsupportedOperationException("Sin implementar");
+       int costeHipoteca = hipotecaBase + (int)(numCasas * 0.5 * hipotecaBase) + numHoteles * hipotecaBase;
+       return costeHipoteca;
     }
     
     int cancelarHipoteca(){
@@ -55,7 +60,7 @@ public class Casilla {
     }
     
     boolean estaHipotecada(){
-        throw new UnsupportedOperationException("Sin implementar");
+        return hipotecada;
     }
     
     int getCosteHipoteca(){
