@@ -44,7 +44,8 @@ public class Casilla {
     }
     
     int cancelarHipoteca(){
-        throw new UnsupportedOperationException("Sin implementar");
+        hipotecada = false;
+        return 1;
     }
     
     int cobrarAlquiler(){
@@ -72,7 +73,8 @@ public class Casilla {
     }
     
     int hipotecar(){
-        throw new UnsupportedOperationException("Sin implementar");
+        hipoteca = true;
+        return 1;
     }
     
     int precioTotalComprar(){
