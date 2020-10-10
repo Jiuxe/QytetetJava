@@ -8,6 +8,7 @@ public enum TipoCasilla {
     CARCEL, 
     JUEZ, 
     IMPUESTO, 
-    PARKING
+    PARKING,
+    ESTACION
     
 }
