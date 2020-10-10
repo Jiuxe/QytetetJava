@@ -25,7 +25,7 @@ public class TituloPropiedad {
     /*----------------------------------------------------------------------------*/
     
     void cobrarAlquiler(int coste){
-        
+        this.jugador.saldo += coste; 
     }
     
     boolean propietarioEncarcelado(){
@@ -73,6 +73,12 @@ public class TituloPropiedad {
 
     public int getPrecioEdificar() {
         return precioEdificar;
+    }
+    
+    Jugador cambioPropietario(Jugador propietario){
+        Jugador temp = this.propietario; 
+        this.propietario = newPropietario;
+        return temp;
     }
     
     public String toString(){
