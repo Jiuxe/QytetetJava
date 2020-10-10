@@ -26,7 +26,6 @@ public class TituloPropiedad {
     
     void cobrarAlquiler(int coste){
         
-        
     }
     
     boolean propietarioEncarcelado(){
@@ -35,15 +34,15 @@ public class TituloPropiedad {
     }
     
     void setCasilla(Casilla casilla){
-        
+        this.casilla = casilla
     }
     
     void setHipotecada(boolean hipotecada){
-        
+        this.hipotecado = hipotecada
     }
     
     void setPropietario(Jugador propietario){
-        
+        this.propietario = propietario;
     }
     
     boolean tengoPropiedad(){
