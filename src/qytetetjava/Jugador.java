@@ -5,9 +5,9 @@ import java.util.ArrayList;
 
 public class Jugador {
     
-    boolean encarcelado;
-    String nombre;
-    int saldo;
+    protected boolean encarcelado;
+    private String nombre;
+    private int saldo;
     private Casilla casillaActual;
     private ArrayList<TituloPropiedad> propiedades;
     private Sorpresa cartaLibertad; 
