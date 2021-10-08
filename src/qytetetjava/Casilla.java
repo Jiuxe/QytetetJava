@@ -53,7 +53,7 @@ public class Casilla {
     }
     
     int edificarCasa(){
-        throw new UnsupportedOperationException("Sin implementar");
+        return coste;
     }
     
     int edificarHotel(){
