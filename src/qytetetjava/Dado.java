@@ -28,6 +28,12 @@ public class Dado {
             return ultimoResultado= 1+random.nextInt(6);
     }
 
+    boolean entroEnLaCarcel(){
+        int n = tirar();
+        boolean x = n==6?true : false;
+        return x
+    }
+    
     boolean salgoDeLaCarcel(){
         int n = tirar();
         boolean x = n >= 5 ? true : false;
