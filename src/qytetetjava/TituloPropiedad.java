@@ -47,7 +47,7 @@ public class TituloPropiedad {
     
     boolean tengoPropiedad(){
         
-        return false;
+        return this.puedoEdificar;
     }
     
     /*----------------------------------------------------------------------------*/
