@@ -2,9 +2,9 @@ package qytetetjava;
 
 public class Sorpresa {
    
-    private String texto;
-    private TipoSorpresa tipo;
-    private int valor;
+    package String texto;
+    package TipoSorpresa tipo;
+    package int valor;
     
     public Sorpresa(String texto, int valor, TipoSorpresa tipo){
         this.texto = texto;
