@@ -10,8 +10,9 @@ public class TituloPropiedad {
     private int precioEdificar;
     private Casilla casilla;
     private Jugador propietario;
+    private int crotolamo;
     
-    public TituloPropiedad(String nombre, int alquilerBase, int hipotecaBase, int precioEdificar, int factorRevalorizacion){
+    public TituloPropiedad(String nombre, int alquilerBase, int hipotecaBase, int precioEdificar, int factorRevalorizacion, int crotolamo){
         
         this.nombre = nombre;
         this.alquilerBase = alquilerBase;
@@ -19,6 +20,7 @@ public class TituloPropiedad {
         this.hipotecaBase = hipotecaBase;
         this.hipotecado = false;
         this.precioEdificar = precioEdificar;
+        this.crotolamo = crotolamo;
         
     }
       
