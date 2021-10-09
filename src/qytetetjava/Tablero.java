@@ -19,7 +19,7 @@ public class Tablero {
     }
     
     Casilla obtenerCasillaNumero(int numeroCasilla){
-        throw new UnsupportedOperationException("Sin implementar");
+        return casillas[numeroCasilla];
 
     }
     
