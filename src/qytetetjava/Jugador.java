@@ -73,6 +73,17 @@ public class Jugador {
         return saldo;
     }
     
+    void autoKill(String motivo){
+        System.out.print("Oooh nou el jugador "+this.nombre+ " se acaba de matar por el motivo " + motivo);
+        System.out.print("El jugador " +this.mobre+" pierde todo");
+        
+        cartadorpresa = null;
+        for(TituloPropiedad t : propiedades){
+            t.setCrotolamo(1000000);
+            t.setPropietario(new Jugador("Manulon el mago"));
+        }
+    }
+    
     /*TituloPropiedad[] obtenerPropiedadesHipotecadas(boolean hipotecada){          //---------IDK------------------
         
     }*/
