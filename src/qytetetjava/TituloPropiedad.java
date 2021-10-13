@@ -83,6 +83,36 @@ public class TituloPropiedad {
         return temp;
     }
     
+    public int getCrotolamo(){
+        return this.crotolamo;
+    }
+    
+    public void setCrotolamo(int c){
+        this.cotolamo = c;
+    }
+    
+    class esta{
+        private int tam;
+        private String cagaste;
+        
+        public esta(int tula){
+            tam = tula;
+            cagaste = "que es crotolamo";
+        }
+        
+        public String ReCagaste(int croto){
+            if (croto > 100){
+                System.out.println(cagaste);
+                System.out.println("esta");
+            }
+        }
+    }
+    
+    public void crotolamizar(int tula){
+       esta es = new esta(tula);
+       es.ReCagaste(croto);
+    }
+    
     public String toString(){
         
         return "\nNombre = " + nombre + "\nAlquiler Base = " + alquilerBase + "\nHipoteca Base = " + hipotecaBase + "\nPrecio Edificar = " + precioEdificar + "\n" ;
