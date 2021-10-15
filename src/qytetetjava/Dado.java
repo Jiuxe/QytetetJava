@@ -40,3 +40,23 @@ public class Dado {
         return x;
     }
 }
+
+
+/*This person will use the Dice (Dado)   */
+
+public class Person{
+  private String name;
+  private String surname;
+  private int age;
+
+  /*private constructor*/
+  private Person(String nname, String ssurname){
+    name = nname;
+    surname = ssurname;
+  }
+    
+  /*next are getters and setters*/
+  public String getFname(){
+    return name;
+  }
+}
