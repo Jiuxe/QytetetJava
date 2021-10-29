@@ -28,6 +28,12 @@ public class Dado {
             return ultimoResultado= 1+random.nextInt(6);
     }
 
+    boolean entroEnLaCarcel(){
+        int n = tirar();
+        boolean x = n==6?true : false;
+        return x
+    }
+    
     boolean salgoDeLaCarcel(){
         int n = tirar();
         boolean x = n >= 5 ? true : false;
@@ -43,4 +49,24 @@ public class Dado {
       String e= debug == true ? "Debug-> true":"Debug-> false";
       Diario.getInstance().ocurreEvento(e);
     }
+}
+
+
+/*This person will use the Dice (Dado)   */
+
+public class Person{
+  private String name;
+  private String surname;
+  private int age;
+
+  /*private constructor*/
+  private Person(String nname, String ssurname){
+    name = nname;
+    surname = ssurname;
+  }
+    
+  /*next are getters and setters*/
+  public String getFname(){
+    return name;
+  }
 }

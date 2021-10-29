@@ -19,7 +19,7 @@ public class Tablero {
     }
     
     Casilla obtenerCasillaNumero(int numeroCasilla){
-        throw new UnsupportedOperationException("Sin implementar");
+        return casillas[numeroCasilla];
 
     }
     
@@ -64,6 +64,39 @@ public class Tablero {
     public String toString() {
         return "Tablero{" + "casillas=" + casillas + '}';
     }
-    
-    
+}
+
+
+public class Vehicle_to_tablero {
+    //defining class
+    // fields for vehicle
+    public int cadence;
+    public int gear;
+    public int speed;
+        
+    // the Bicycle class has
+    // one constructor
+    public Vehicle_to_tablero(int startc, int starts, int startg) {
+        gear = startg;
+        cadence = startc;
+        speed = starts;
+    }
+        
+    // tablero methods
+    public void set_C(int row_f_c) {
+        cadence = row_f_c;
+    }
+        
+    public void set_G(int n_v) {
+        gear = n_v;
+    }
+        
+    public void braker(int d_t) {
+        speed -= d_t + 1;
+    }
+        
+    public void aint_faster(int i_t) {
+        speed += i_t + 1;
+    }
+        
 }

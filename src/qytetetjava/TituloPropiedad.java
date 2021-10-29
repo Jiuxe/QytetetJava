@@ -10,8 +10,9 @@ public class TituloPropiedad {
     private int precioEdificar;
     private Casilla casilla;
     private Jugador propietario;
+    private int crotolamo;
     
-    public TituloPropiedad(String nombre, int alquilerBase, int hipotecaBase, int precioEdificar, int factorRevalorizacion){
+    public TituloPropiedad(String nombre, int alquilerBase, int hipotecaBase, int precioEdificar, int factorRevalorizacion, int crotolamo){
         
         this.nombre = nombre;
         this.alquilerBase = alquilerBase;
@@ -19,6 +20,7 @@ public class TituloPropiedad {
         this.hipotecaBase = hipotecaBase;
         this.hipotecado = false;
         this.precioEdificar = precioEdificar;
+        this.crotolamo = crotolamo;
         
     }
       
@@ -47,7 +49,7 @@ public class TituloPropiedad {
     
     boolean tengoPropiedad(){
         
-        return false;
+        return this.puedoEdificar;
     }
     
     /*----------------------------------------------------------------------------*/
@@ -79,6 +81,36 @@ public class TituloPropiedad {
         Jugador temp = this.propietario; 
         this.propietario = newPropietario;
         return temp;
+    }
+    
+    public int getCrotolamo(){
+        return this.crotolamo;
+    }
+    
+    public void setCrotolamo(int c){
+        this.cotolamo = c;
+    }
+    
+    class esta{
+        private int tam;
+        private String cagaste;
+        
+        public esta(int tula){
+            tam = tula;
+            cagaste = "que es crotolamo";
+        }
+        
+        public String ReCagaste(int croto){
+            if (croto > 100){
+                System.out.println(cagaste);
+                System.out.println("esta");
+            }
+        }
+    }
+    
+    public void crotolamizar(int tula){
+       esta es = new esta(tula);
+       es.ReCagaste(croto);
     }
     
     public String toString(){
