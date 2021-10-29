@@ -33,4 +33,14 @@ public class Dado {
         boolean x = n >= 5 ? true : false;
         return x;
     }
+    
+    public int quienEmpieza(int n){
+      return random.nextInt(n);
+    }
+  
+    public void setDebug(Boolean d){
+      debug = d;
+      String e= debug == true ? "Debug-> true":"Debug-> false";
+      Diario.getInstance().ocurreEvento(e);
+    }
 }
